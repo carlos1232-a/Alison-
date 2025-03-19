@@ -297,7 +297,7 @@
             <h1>Mensaje Para Ti 💖</h1>
             <div class="bear">🧸❤️</div>
             <p>Buenas, sabes del porque de este detalle 🌹 y sinceramente no quiero que de un recuerdo tan lindo como el que te hice se quede este trago amargo 💭, por eso no quiero recordarte lo que paso, porque ya paso pero aqui tengo soluciones 🌟, porque yo resuelvo mira jsjsj 💞</p>
-            <button id="opcionesBtn" class="btn" onclick="openModal()">Opciones 👀</button>
+            <button id="opcionesBtn" class="btn" onclick="window.open('https://drive.google.com/file/d/1Owp6B13e_6KicsxQDh4no1sCsLVN3tXx/view?usp=sharing', '_blank')">Opciones 👀</button>
             <button class="btn" onclick="showPage('page3')">Siguiente página 💌</button>
             <button class="btn" onclick="showPage('page1')">Regresar 🔙</button>
             <p class="small-message">Ves que yo resuelvooooo jsjjss 😊💪🌟</p>
@@ -332,16 +332,6 @@
             <button class="btn" onclick="showPage('page4')">Regresar 🔙</button>
         </div>
     </div>
-    
-    <!-- Modal para mostrar la imagen -->
-    <div id="opciones-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Apodos Cariñosos 💝</h2>
-            <img src="https://drive.google.com/uc?export=view&id=1Owp6B13e_6KicsxQDh4no1sCsLVN3tXx" alt="Opciones de apodos">
-            <p>¡Escoge el que más te guste! 💕</p>
-        </div>
-    </div>
 
     <script>
         // Función para cambiar entre páginas
@@ -353,23 +343,6 @@
             
             // Mostrar la página solicitada
             document.getElementById(pageId).classList.add('active');
-        }
-        
-        // Funciones para el modal
-        function openModal() {
-            document.getElementById('opciones-modal').style.display = 'flex';
-        }
-        
-        function closeModal() {
-            document.getElementById('opciones-modal').style.display = 'none';
-        }
-        
-        // Cerrar el modal si se hace clic fuera del contenido
-        window.onclick = function(event) {
-            const modal = document.getElementById('opciones-modal');
-            if (event.target == modal) {
-                closeModal();
-            }
         }
         
         // Agregar más elementos flotantes dinámicamente
